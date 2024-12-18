@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export default function Home() {
+  
   const [grid, setGrid] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
