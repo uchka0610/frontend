@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  
   const [grid, setGrid] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
+  useEffect(() => {
+    console.log("Soligdow:", { grid, searchQuery });
+  }, [grid, searchQuery]);
+   
   const data = [
     { id: 1, Name: "Enkh-Uchral", LName: "Amgalanbaatar", Nas: "16" },
     { id: 2, Name: "Tergel", LName: "Ganbold", Nas: "16" },
@@ -17,9 +20,9 @@ export default function Home() {
     { id: 9, Name: "Batmend", LName: "Batbaatar", Nas: "16" },
     { id: 10, Name: "Temuulen", LName: "Saruul-Od", Nas: "16" },
     { id: 11, Name: "Choi-Odser", LName: "Ganbaatar", Nas: "16" },
-    { id: 12, Name: "Hanbileg", LName: "Damdinsuren", Nas: "16" },
-    { id: 13, Name: "Tselmeg", LName: "Ganzorig", Nas: "16" },
-    { id: 14, Name: "Anar-Erdene", LName: "Gantulga", Nas: "16" },
+    { id: 12, Name: "Hanbileg", LName: "Ganzorig", Nas: "16" },
+    { id: 14, Name: "Anar-Erdene", LName: "Damdinsuren", Nas: "16" },
+    { id: 13, Name: "Tselmeg", LName: "Gantulga", Nas: "16" },
     { id: 15, Name: "Enkhtugs", LName: "Urantulga", Nas: "16" },
     { id: 16, Name: "Enkhjav", LName: "Ganbaatar", Nas: "16" },
     { id: 17, Name: "Tugs-Asralt", LName: "Erdenetuya", Nas: "16" },
@@ -70,9 +73,7 @@ export default function Home() {
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-500 w-full">
-            Илэрц олдсонгүй
-          </p>
+          <p className="text-center text-gray-500 w-full">Илэрц олдсонгүй</p>
         )}
       </div>
     </div>
