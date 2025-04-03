@@ -3,51 +3,51 @@ import { useEffect, useState } from "react";
 
 export default function ID() {
   const router = useRouter();
+  const { id } = router.query;
   const [loading, setLoading] = useState(false);
-  const [data, setData] = useState();
-
-  console.log(router.query.id);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
+    if (!router.isReady) return; // Wait until router is ready
+
     const fetchData = async () => {
       try {
         setLoading(true);
         const response = await fetch(
           "https://mongol-api-rest.vercel.app/clothes"
         );
-
         const result = await response.json();
-
-        setData(result.clothes);
-        setLoading(false);
+        setData(result.clothes || []);
       } catch (error) {
-        console.log(error);
+        console.error("Error fetching data:", error);
+      } finally {
         setLoading(false);
       }
     };
 
     fetchData();
-  }, []);
-  console.log(data);
+  }, [router.isReady]); // Run effect only when router is ready
+
+  if (loading) return <p>...Loading</p>;
+
+  const item = data.find((item) => item.id === id);
 
   return (
     <div>
-      {loading && <p>...Loading</p>}
       <button className="border p-4 bg-blue-200" onClick={() => router.back()}>
-        back
+        Back
       </button>
-      {(data || []).map((item, index) =>
-        router.query.id === item.id ? (
-          <div>
-            {item.id} {item.name} {item.description}
-            <img src={item?.images} className="w-40" />
-          </div>
-        ) : (
-          <p>
-            {index == 1 &&
-              `${router.query.id} ene ni idtai hereglecgh oldsongu!`}
-          </p>
-        )
+
+      {item ? (
+        <div key={item.id} className="p-4 border">
+          <h2>{item.name}</h2>
+          <p>{item.description}</p>
+          {item.images && item.images.length > 0 && (
+            <img src={item.images[0]} alt={item.name} className="w-40" />
+          )}
+        </div>
+      ) : (
+        <p>{id && `${id} ID-тай бүтээгдэхүүн олдсонгүй!`}</p>
       )}
     </div>
   );
