@@ -15,7 +15,7 @@ export default function Home() {
     { path: "/task1", label: "Task1", description: "Dynamic content rendering", category: "UI Components" },
     { path: "/task2", label: "Task2", description: "State management example", category: "Functionality" },
     { path: "/uck", label: "CV", description: "My professional portfolio", category: "Personal" },
-    { path: "/week3", label: "MongolAPI", description: "Integration with Mongolian data API", category: "API" },
+    { path: "/mongolapi", label: "MongolAPI", description: "Integration with Mongolian data API", category: "API" },
   ];
 
   const categories = [
