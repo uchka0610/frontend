@@ -8,6 +8,7 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const tasks = [
+    { path: "/mesa", label: "MESA", description: "Interactive counter with animations", category: "UI Components" },
     { path: "/a", label: "Counter", description: "Interactive counter with animations", category: "Functionality" },
     { path: "/grid", label: "Grid", description: "Responsive grid layout system", category: "UI Components" },
     { path: "/nemeltonoo", label: "Nemeltonoo", description: "Additional features showcase", category: "Functionality" },
