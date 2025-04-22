@@ -98,7 +98,7 @@ export default function Home() {
           </div>
           <p className="text-xs text-gray-400 mt-6 max-w-md mx-auto font-montserrat">
             *ProSettings.net is the most trusted database for accurate analysis
-            and reviews of pro gamers' preferred hardware and in-game settings.
+            and reviews of pro gamers preferred hardware and in-game settings.
           </p>
         </div>
 
