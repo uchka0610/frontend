@@ -41,19 +41,20 @@ export default function Home() {
 
         {/*Main Content*/}
         <div className="text-center py-10 md:py-16 px-4 md:px-8">
-          <div className="text-[#D4003B] text-2xl md:text-3xl mb-2">✦✦</div>
-          <h2 className="text-3xl md:text-4xl font-extrabold">
-            What’s most preferred{" "}
-            <span className="text-[#D4003B]">monitor by pro-gamers?</span>
-          </h2>
-          <p className="mt-2 text-gray-300 text-sm md:text-base">
+          <div className="text-[#D4003B] text-2xl md:text-5xl mb-2">✦✦</div>
+          <p className="text-3xl md:text-4xl font-extrabold font-montserrat">
+            What’s most preferred <br />
+            <span className="text-[#D4003B] font-montserrat">monitor by pro-gamers?</span>
+          </p>
+
+          <p className="mt-2 text-gray-300 text-sm md:text-base font-montserrat">
             according to ProSettings.net*
           </p>
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-16 mt-10 md:mt-16">
             {/*CS2*/}
             <div className="flex flex-col md:flex-row items-center">
-              <div className="bg-gradient-to-b from-[#D4003B] to-[#370614] p-6 rounded-tl-[50px] rounded-br-[50px] w-56 h-56 overflow-visible flex justify-center relative">
+              <div className=" font-montserrat bg-gradient-to-b from-[#D4003B] to-[#370614] p-6 rounded-tl-[50px] rounded-br-[50px] w-56 h-56 overflow-visible flex justify-center relative">
                 <img
                   src="/cs.png"
                   alt="CS2"
@@ -61,14 +62,14 @@ export default function Home() {
                 />
               </div>
               <div className=" ml-0 md:ml-8 mt-6 md:mt-0 max-w-[220px] text-center md:text-left">
-                <p className="text-[#D4003B] font-bold text-2xl">80%+</p>
-                <p className="text-[#D4003B] font-bold leading-tight">
+                <p className=" font-montserrat text-[#D4003B] font-bold text-2xl">80%+</p>
+                <p className="text-[#D4003B] font-montserrat font-bold leading-tight">
                   Counter Strike 2 pro-gamers
                   <br />
-                  <span className="text-white">choice for monitor</span>
+                  <span className="text-white font-montserrat">choice for monitor</span>
                 </p>
 
-                <button className="mt-2 border border-white px-5 py-2 rounded-full text-base hover:bg-white hover:text-black transition duration-200">
+                <button className=" font-montserrat mt-2 border border-white px-5 py-2 rounded-full text-base hover:bg-white hover:text-black transition duration-200">
                   Check here
                 </button>
               </div>
@@ -78,24 +79,24 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center">
               <div className="bg-gradient-to-b from-[#D4003B] to-[#370614] p-6 rounded-tl-[50px] rounded-br-[50px] w-56 h-56 overflow-visible flex justify-center relative">
                 <img
-                  src="https://cdn.discordapp.com/attachments/1150760758934769666/1363755357368881172/ReynaBetter.png?ex=68072fa6&is=6805de26&hm=854d6e8132f446689c2d28f537299e93ae7aaffbe13865419ff167e5283ee9cc&"
+                  src="/reyna.png"
                   alt="Valorant"
                   className="scale-175 object-cover origin-center transform translate-y-[1%]"
                 />
               </div>
               <div className=" ml-0 md:ml-8 mt-6 md:mt-0 max-w-[220px] text-center md:text-left">
-                <p className="text-[#D4003B] font-bold text-2xl">70%+</p>
-                <p className="text-[#D4003B] font-bold">
+                <p className="text-[#D4003B] font-bold font-montserrat text-2xl">70%+</p>
+                <p className="text-[#D4003B] font-bold font-montserrat">
                   of VALORANT pro-gamers{" "}
-                  <span className="text-white">choice for monitor.</span>
+                  <span className="text-white font-montserrat">choice for monitor.</span>
                 </p>
-                <button className="mt-4 border border-white px-5 py-2 rounded-full text-base hover:bg-white hover:text-black transition duration-200">
+                <button className=" font-montserrat mt-4 border border-white px-5 py-2 rounded-full text-base hover:bg-white hover:text-black transition duration-200">
                   Check here
                 </button>
               </div>
             </div>
           </div>
-          <p className="text-xs text-gray-400 mt-6 max-w-md mx-auto">
+          <p className="text-xs text-gray-400 mt-6 max-w-md mx-auto font-montserrat">
             *ProSettings.net is the most trusted database for accurate analysis
             and reviews of pro gamers' preferred hardware and in-game settings.
           </p>
@@ -105,11 +106,11 @@ export default function Home() {
         <section className="bg-black text-white py-12 md:py-16 px-4 md:px-20">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
             <div>
-              <p className="text-[#D4003B] text-2xl md:text-3xl font-semibold uppercase">
+              <p className="text-[#D4003B] text-2xl md:text-3xl font-semibold uppercase font-montserrat">
                 Reviews
               </p>
-              <h2 className="text-3xl md:text-4xl leading-tight font-thin">
-                <span className="text-[#D4003B] font-bold">
+              <h2 className="text-3xl md:text-4xl leading-tight font-thin font-montserrat">
+                <span className="text-[#D4003B] font-bold font-montserrat">
                   Win like a pro.
                 </span>
                 <br />
@@ -150,32 +151,15 @@ export default function Home() {
         </section>
 
         {/*Marquee*/}
-        <div className="marquee-wrapper overflow-hidden w-full">
-          <div className="marquee-content flex animate-marquee">
-            <Image
-              src="/vct.png"
-              width={1000}
-              height={100}
-              className="flex-shrink-0 animate-image-delay-1"
-            />
-            <Image
-              src="/sen.png"
-              width={1000}
-              height={100}
-              className="flex-shrink-0 animate-image-delay-2"
-            />
-            <Image
-              src="/vct.png"
-              width={1000}
-              height={100}
-              className="flex-shrink-0 animate-image-delay-3"
-            />
-            <Image
-              src="/sen.png"
-              width={1000}
-              height={100}
-              className="flex-shrink-0 animate-image-delay-4"
-            />
+        <div className="relative w-full">
+          <img className="w-full" src="/zowie.png" alt="Zowie VCT Banner" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+            <p className="text-sm md:text-base mb-4 font-montserrat font-thin">
+              The Official Monitor of VCT Pacific 2025
+            </p>
+            <button className="font-montserrat bg-black border h-10 border-white text-white w-40 font-semibold py-2 pb-4 rounded-full transition mb-60 ">
+              Check here
+            </button>
           </div>
         </div>
 
@@ -185,27 +169,27 @@ export default function Home() {
             className="relative bg-cover bg-center w-full min-h-[550px] flex items-center justify-end"
             style={{ backgroundImage: "url('/mousepad.png')" }}
           >
-            <div className="p-6 rounded-lg max-w-md">
+            <div className="p-6 rounded-lg max-w-md pr-24">
               <h2 className="text-2xl font-bold mb-2">
                 Strive for Perfection.
               </h2>
-              <p className="text-sm text-gray-300">
+              <p className="text-sm text-gray-300 font-montserrat">
                 ZOWIE is focusing on designing dedicated esports gear for FPS
                 players, empowering you to continually surpass your limits in
                 FPS competition.
               </p>
 
-              <div className="flex justify-center md:justify-start gap-8 mt-6 flex-wrap">
+              <div className="flex justify-center md:justify-start gap-8 mt-6  flex-wrap">
                 {/*Monitor*/}
                 <div className="flex flex-col items-center text-center">
-                  <div className="bg-gradient-to-bl from-[#D4003B] via-[#70001F] to-[#6E001F] w-20 h-20 rounded-full flex items-center justify-center overflow-visible relative min-w-[80px]">
+                  <div className=" bg-gradient-to-bl from-[#D4003B] via-[#70001F] to-[#6E001F] w-20 h-20 rounded-full flex items-center justify-center overflow-visible relative min-w-[80px]">
                     <img
                       src="/monitor.png"
                       alt="Monitor"
                       className="w-32 h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
                     />
                   </div>
-                  <p className="text-sm mt-2">Monitors</p>
+                  <p className="text-sm mt-2 font-montserrat">Monitors</p>
                 </div>
 
                 {/*Mouse*/}
@@ -216,8 +200,8 @@ export default function Home() {
                       alt="Mouse"
                       className="w-32 h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
                     />
-                  </div>
-                  <p className="text-sm mt-2">Mice</p>
+                  </div> 
+                  <p className="text-sm mt-2 font-montserrat">Mice</p>
                 </div>
 
                 {/*Mousepad*/}
@@ -229,12 +213,12 @@ export default function Home() {
                       className="w-32 h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
                     />
                   </div>
-                  <p className="text-sm mt-2">Mouse Pads</p>
+                  <p className="text-sm mt-2 font-montserrat">Mouse Pads</p>
                 </div>
               </div>
 
               <div className="mt-6 flex justify-center">
-                <button className="border border-white px-6 py-3 rounded-full text-sm hover:bg-white hover:text-black">
+                <button className="border border-white px-6 py-3 rounded-full text-sm hover:bg-white hover:text-black font-montserrat">
                   Check here
                 </button>
               </div>
@@ -246,15 +230,15 @@ export default function Home() {
         <div className="grid md:grid-cols-2 grid-cols-1 pt-1">
           <div className="bg-[#d40a41] text-white flex flex-col items-center justify-center py-16 px-6 md:rounded-tr-[80px] text-center">
             <Image src="/map.png" alt="Location Icon" width={120} height={50} />
-            <h2 className="text-2xl font-bold mt-4">
+            <h2 className="text-2xl font-bold mt-4 font-montserrat">
               Interested in experiencing?
             </h2>
-            <p className="mt-2">
+            <p className="mt-2 font-montserrat">
               Get the ZOWIE experience by visiting our partner iCafes
             </p>
             <Link
               href="/experience"
-              className="hover:bg-white hover:text-black mt-6 bg-[#d40a41] text-[#ffffff] px-5 py-2 rounded-full font-semibold hover:shadow-md transition border-2 border-white"
+              className="font-montserrat hover:bg-white hover:text-black mt-6 bg-[#d40a41] text-[#ffffff] px-5 py-2 rounded-full font-semibold hover:shadow-md transition border-2 border-white"
             >
               Check here
             </Link>
@@ -267,13 +251,13 @@ export default function Home() {
               width={120}
               height={50}
             />
-            <h2 className="text-2xl font-bold mt-4">Where to Buy</h2>
-            <p className="mt-2">
+            <h2 className="text-2xl font-bold mt-4 font-montserrat">Where to Buy</h2>
+            <p className="mt-2 font-montserrat">
               Check out our list of partner dealers and stores
             </p>
             <Link
               href="/experience"
-              className="hover:bg-white hover:text-black mt-6 bg-black text-[#ffffff] px-5 py-2 rounded-full font-semibold hover:shadow-md transition border-2 border-white"
+              className="font-montserrat hover:bg-white hover:text-black mt-6 bg-black text-[#ffffff] px-5 py-2 rounded-full font-semibold hover:shadow-md transition border-2 border-white"
             >
               Check here
             </Link>

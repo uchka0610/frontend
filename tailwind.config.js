@@ -17,6 +17,9 @@ module.exports = {
         250: '2.5',
         300: '3',
       },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'], // 👈 Add this line
+      },
     },
   },
   plugins: [],
