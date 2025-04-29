@@ -75,7 +75,7 @@ export default function Home() {
               <div className="text-[9vw] text-[#EACC18] tracking-tight">
                 NOMADIC MASTERS
               </div>
-              <div className="text-[12vw] bg-gradient-to-r text-[#EACC18] bg-clip-text text-transparent tracking-tight">
+              <div className="text-[12vw] text-[#EACC18] tracking-tight ">
                 SPRING 2025
               </div>
             </h1>
@@ -156,7 +156,7 @@ export default function Home() {
               alt="Trophy Celebration"
               width={400}
               height={400}
-              className="absolute top-8 right-8 rounded-md object-cover -translate-x-16 -translate-y-[20%]"
+              className="absolute top-8 right-8 rounded-md object-cover -translate-x-16 -translate-y-[20%] border-2 border-[#EACC18]"
             />
           </div>
 
@@ -178,11 +178,22 @@ export default function Home() {
 
                 {/* Action buttons */}
                 <div className="flex flex-wrap gap-4 mt-4">
-                  <button className="px-6 py-3 bg-[#EACC18] text-black hover:bg-yellow-500 font-semibold rounded">
-                    🎟️ Tickets
+                  <button className="  text[#EACC18] font-semibold rounded flex items-center">
+                    <img
+                      src="/ticket.svg"
+                      alt="Ticket Icon"
+                      className="w-6 h-6 mr-2"
+                    />
+                    Tickets
                   </button>
-                  <button className="px-6 py-3 border border-[#EACC18] text-[#EACC18] hover:bg-[#EACC18] hover:text-black font-semibold rounded">
-                    📖 Read all FAQs
+
+                  <button className="  text[#EACC18] font-semibold rounded flex items-center">
+                    <img
+                      src="/FAQ.svg"
+                      alt="Ticket Icon"
+                      className="w-6 h-6 mr-2"
+                    />
+                    Read all FAQs
                   </button>
                 </div>
               </div>

@@ -44,7 +44,9 @@ export default function Home() {
           <div className="text-[#D4003B] text-2xl md:text-5xl mb-2">✦✦</div>
           <p className="text-3xl md:text-4xl font-extrabold font-montserrat">
             What’s most preferred <br />
-            <span className="text-[#D4003B] font-montserrat">monitor by pro-gamers?</span>
+            <span className="text-[#D4003B] font-montserrat">
+              monitor by pro-gamers?
+            </span>
           </p>
 
           <p className="mt-2 text-gray-300 text-sm md:text-base font-montserrat">
@@ -52,30 +54,39 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-16 mt-10 md:mt-16">
-            {/*CS2*/}
+            {/* CS2 */}
             <div className="flex flex-col md:flex-row items-center">
-              <div className=" font-montserrat bg-gradient-to-b from-[#D4003B] to-[#370614] p-6 rounded-tl-[50px] rounded-br-[50px] w-56 h-56 overflow-visible flex justify-center relative">
+              <div className="font-montserrat bg-gradient-to-b from-[#D4003B] to-[#370614] p-6 rounded-tl-[50px] rounded-br-[50px] w-56 h-56 overflow-visible flex justify-center relative">
                 <img
                   src="/cs.png"
                   alt="CS2"
-                  className="scale-125 object-cover  origin-center transform translate-y-[10%] translate-x-[-15%]"
+                  className="scale-125 object-cover origin-center transform translate-y-[10%] translate-x-[-15%]"
                 />
               </div>
-              <div className=" ml-0 md:ml-8 mt-6 md:mt-0 max-w-[220px] text-center md:text-left">
-                <p className=" font-montserrat text-[#D4003B] font-bold text-2xl">80%+</p>
+              <div className="ml-0 md:ml-8 mt-6 md:mt-0 max-w-[220px] text-center md:text-left">
+                <p className="font-montserrat text-[#D4003B] font-bold text-2xl">
+                  80%+
+                </p>
                 <p className="text-[#D4003B] font-montserrat font-bold leading-tight">
                   Counter Strike 2 pro-gamers
                   <br />
-                  <span className="text-white font-montserrat">choice for monitor</span>
+                  <span className="text-white font-montserrat">
+                    choice for monitor
+                  </span>
                 </p>
-
-                <button className=" font-montserrat mt-2 border border-white px-5 py-2 rounded-full text-base hover:bg-white hover:text-black transition duration-200">
-                  Check here
-                </button>
+                <a
+                  href="https://prosettings.net/guides/cs2-monitor/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="font-montserrat mt-2 border border-white px-5 py-2 rounded-full text-base hover:bg-white hover:text-black transition duration-200">
+                    Check here
+                  </button>
+                </a>
               </div>
             </div>
 
-            {/*VALORANT*/}
+            {/* VALORANT */}
             <div className="flex flex-col md:flex-row items-center">
               <div className="bg-gradient-to-b from-[#D4003B] to-[#370614] p-6 rounded-tl-[50px] rounded-br-[50px] w-56 h-56 overflow-visible flex justify-center relative">
                 <img
@@ -84,18 +95,29 @@ export default function Home() {
                   className="scale-175 object-cover origin-center transform translate-y-[1%]"
                 />
               </div>
-              <div className=" ml-0 md:ml-8 mt-6 md:mt-0 max-w-[220px] text-center md:text-left">
-                <p className="text-[#D4003B] font-bold font-montserrat text-2xl">70%+</p>
+              <div className="ml-0 md:ml-8 mt-6 md:mt-0 max-w-[220px] text-center md:text-left">
+                <p className="text-[#D4003B] font-bold font-montserrat text-2xl">
+                  70%+
+                </p>
                 <p className="text-[#D4003B] font-bold font-montserrat">
                   of VALORANT pro-gamers{" "}
-                  <span className="text-white font-montserrat">choice for monitor.</span>
+                  <span className="text-white font-montserrat">
+                    choice for monitor.
+                  </span>
                 </p>
-                <button className=" font-montserrat mt-4 border border-white px-5 py-2 rounded-full text-base hover:bg-white hover:text-black transition duration-200">
-                  Check here
-                </button>
+                <a
+                  href="https://prosettings.net/guides/valorant-monitor/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="font-montserrat mt-4 border border-white px-5 py-2 rounded-full text-base hover:bg-white hover:text-black transition duration-200">
+                    Check here
+                  </button>
+                </a>
               </div>
             </div>
           </div>
+
           <p className="text-xs text-gray-400 mt-6 max-w-md mx-auto font-montserrat">
             *ProSettings.net is the most trusted database for accurate analysis
             and reviews of pro gamers preferred hardware and in-game settings.
@@ -152,14 +174,20 @@ export default function Home() {
 
         {/*Marquee*/}
         <div className="relative w-full">
-          <img className="w-full" src="/zowie.png" alt="Zowie VCT Banner" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-            <p className="text-sm md:text-base mb-4 font-montserrat font-thin">
+          <img
+            className="w-full h-auto object-cover"
+            src="/zowie.png"
+            alt="Zowie VCT Banner"
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg mb-4 font-montserrat font-thin">
               The Official Monitor of VCT Pacific 2025
             </p>
-            <button className="font-montserrat bg-black border h-10 border-white text-white w-40 font-semibold py-2 pb-4 rounded-full transition mb-60 ">
-              Check here
-            </button>
+            <a href="https://zowie.benq.com/en-ap/campaign/vct-pacific-official-monitor.html">
+              <button className="font-montserrat bg-black border h-10 border-white text-white w-32 sm:w-40 font-semibold py-2 pb-4 rounded-full transition duration-300 hover:bg-white hover:text-black mb-20 sm:mb-60">
+                Check here
+              </button>
+            </a>
           </div>
         </div>
 
@@ -182,37 +210,46 @@ export default function Home() {
               <div className="flex justify-center md:justify-start gap-8 mt-6  flex-wrap">
                 {/*Monitor*/}
                 <div className="flex flex-col items-center text-center">
-                  <div className=" bg-gradient-to-bl from-[#D4003B] via-[#70001F] to-[#6E001F] w-20 h-20 rounded-full flex items-center justify-center overflow-visible relative min-w-[80px]">
-                    <img
-                      src="/monitor.png"
-                      alt="Monitor"
-                      className="w-32 h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
-                    />
-                  </div>
+                  <a href="https://zowie.benq.com/en-ap/monitor.html">
+                    <div className=" bg-gradient-to-bl from-[#D4003B] via-[#70001F] to-[#6E001F] w-20 h-20 rounded-full flex items-center justify-center overflow-visible relative min-w-[80px]">
+                      <img
+                        src="/monitor.png"
+                        alt="Monitor"
+                        className="w-32 h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
+                      />
+                    </div>
+                  </a>
+
                   <p className="text-sm mt-2 font-montserrat">Monitors</p>
                 </div>
 
                 {/*Mouse*/}
                 <div className="flex flex-col items-center text-center">
-                  <div className="bg-gradient-to-bl from-[#D4003B] via-[#70001F] to-[#6E001F] w-20 h-20 rounded-full flex items-center justify-center overflow-visible relative min-w-[80px]">
-                    <img
-                      src="/mouse.png"
-                      alt="Mouse"
-                      className="w-32 h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
-                    />
-                  </div> 
+                  <a href="https://zowie.benq.com/en-ap/mouse.html">
+                    <div className="bg-gradient-to-bl from-[#D4003B] via-[#70001F] to-[#6E001F] w-20 h-20 rounded-full flex items-center justify-center overflow-visible relative min-w-[80px]">
+                      <img
+                        src="/mouse.png"
+                        alt="Mouse"
+                        className="w-32 h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
+                      />
+                    </div>
+                  </a>
+
                   <p className="text-sm mt-2 font-montserrat">Mice</p>
                 </div>
 
                 {/*Mousepad*/}
                 <div className="flex flex-col items-center text-center">
-                  <div className="bg-gradient-to-bl from-[#D4003B] via-[#70001F] to-[#6E001F] w-20 h-20 rounded-full flex items-center justify-center overflow-visible relative min-w-[80px]">
-                    <img
-                      src="/pad.png"
-                      alt="Mousepad"
-                      className="w-32 h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
-                    />
-                  </div>
+                  <a href="https://zowie.benq.com/en-ap/mouse-pad.html">
+                    <div className="bg-gradient-to-bl from-[#D4003B] via-[#70001F] to-[#6E001F] w-20 h-20 rounded-full flex items-center justify-center overflow-visible relative min-w-[80px]">
+                      <img
+                        src="/pad.png"
+                        alt="Mousepad"
+                        className="w-32 h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
+                      />
+                    </div>
+                  </a>
+
                   <p className="text-sm mt-2 font-montserrat">Mouse Pads</p>
                 </div>
               </div>
@@ -223,7 +260,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
 
         {/*Footer*/}
@@ -236,12 +273,14 @@ export default function Home() {
             <p className="mt-2 font-montserrat">
               Get the ZOWIE experience by visiting our partner iCafes
             </p>
-            <Link
-              href="/experience"
-              className="font-montserrat hover:bg-white hover:text-black mt-6 bg-[#d40a41] text-[#ffffff] px-5 py-2 rounded-full font-semibold hover:shadow-md transition border-2 border-white"
-            >
-              Check here
-            </Link>
+            <a href="">
+              <button
+                href="/experience"
+                className="font-montserrat hover:bg-white hover:text-black mt-6 bg-[#d40a41] text-[#ffffff] px-5 py-2 rounded-full font-semibold hover:shadow-md transition border-2 border-white"
+              >
+                Check here
+              </button>
+            </a>
           </div>
           <div className="bg-black text-white flex flex-col items-center justify-center py-16 px-6 text-center">
             <Image
@@ -251,16 +290,17 @@ export default function Home() {
               width={120}
               height={50}
             />
-            <h2 className="text-2xl font-bold mt-4 font-montserrat">Where to Buy</h2>
+            <h2 className="text-2xl font-bold mt-4 font-montserrat">
+              Where to Buy
+            </h2>
             <p className="mt-2 font-montserrat">
               Check out our list of partner dealers and stores
             </p>
-            <Link
-              href="/experience"
-              className="font-montserrat hover:bg-white hover:text-black mt-6 bg-black text-[#ffffff] px-5 py-2 rounded-full font-semibold hover:shadow-md transition border-2 border-white"
-            >
-              Check here
-            </Link>
+            <a href="https://pc-mall.mn/brand/benq">
+              <button className="font-montserrat hover:bg-white hover:text-black mt-6 bg-black text-[#ffffff] px-5 py-2 rounded-full font-semibold hover:shadow-md transition border-2 border-white">
+                Check here
+              </button>
+            </a>
           </div>
         </div>
       </main>

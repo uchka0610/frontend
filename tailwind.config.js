@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        moveDown: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(20px)' }, // you can adjust this
+        },
+      },
+      animation: {
+        moveDown: 'moveDown 5s ease-in-out infinite alternate',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
