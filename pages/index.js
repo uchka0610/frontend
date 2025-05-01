@@ -8,15 +8,66 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const tasks = [
-    { path: "/mesa", label: "MESA", description: "Interactive counter with animations", category: "UI Components" },
-    { path: "/a", label: "Counter", description: "Interactive counter with animations", category: "Functionality" },
-    { path: "/grid", label: "Grid", description: "Responsive grid layout system", category: "UI Components" },
-    { path: "/nemeltonoo", label: "Nemeltonoo", description: "Additional features showcase", category: "Functionality" },
-    { path: "/search", label: "Search", description: "Real-time search implementation", category: "Functionality" },
-    { path: "/task1", label: "Task1", description: "Dynamic content rendering", category: "UI Components" },
-    { path: "/task2", label: "Task2", description: "State management example", category: "Functionality" },
-    { path: "/uck", label: "CV", description: "My professional portfolio", category: "Personal" },
-    { path: "/mongolapi", label: "MongolAPI", description: "Integration with Mongolian data API", category: "API" },
+    {
+      path: "/dxracer",
+      label: "dxracer",
+      description: "Interactive counter with animations",
+      category: "UI Components",
+    },
+    {
+      path: "/mesa",
+      label: "MESA",
+      description: "Interactive counter with animations",
+      category: "UI Components",
+    },
+    {
+      path: "/a",
+      label: "Counter",
+      description: "Interactive counter with animations",
+      category: "Functionality",
+    },
+    {
+      path: "/grid",
+      label: "Grid",
+      description: "Responsive grid layout system",
+      category: "UI Components",
+    },
+    {
+      path: "/nemeltonoo",
+      label: "Nemeltonoo",
+      description: "Additional features showcase",
+      category: "Functionality",
+    },
+    {
+      path: "/search",
+      label: "Search",
+      description: "Real-time search implementation",
+      category: "Functionality",
+    },
+    {
+      path: "/task1",
+      label: "Task1",
+      description: "Dynamic content rendering",
+      category: "UI Components",
+    },
+    {
+      path: "/task2",
+      label: "Task2",
+      description: "State management example",
+      category: "Functionality",
+    },
+    {
+      path: "/uck",
+      label: "CV",
+      description: "My professional portfolio",
+      category: "Personal",
+    },
+    {
+      path: "/mongolapi",
+      label: "MongolAPI",
+      description: "Integration with Mongolian data API",
+      category: "API",
+    },
   ];
 
   const categories = [
@@ -74,7 +125,7 @@ export default function Home() {
               </button>
             ))}
           </div>
-          
+
           <div className="w-full md:w-1/3">
             <input
               type="text"
@@ -95,14 +146,20 @@ export default function Home() {
                 className="bg-gray-900 p-6 rounded-lg border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all duration-300 cursor-pointer group"
               >
                 <div className="h-24 mb-4 bg-gray-800 rounded flex items-center justify-center group-hover:bg-gray-700 transition-colors">
-                  <span className="text-3xl">{
-                    task.category === "UI Components" ? "🎨" : 
-                    task.category === "Functionality" ? "⚙️" : 
-                    task.category === "API" ? "🔌" : "📄"
-                  }</span>
+                  <span className="text-3xl">
+                    {task.category === "UI Components"
+                      ? "🎨"
+                      : task.category === "Functionality"
+                      ? "⚙️"
+                      : task.category === "API"
+                      ? "🔌"
+                      : "📄"}
+                  </span>
                 </div>
-                
-                <h3 className="text-xl font-medium text-white mb-1 group-hover:text-gray-200">{task.label}</h3>
+
+                <h3 className="text-xl font-medium text-white mb-1 group-hover:text-gray-200">
+                  {task.label}
+                </h3>
                 <p className="text-sm text-gray-500 mb-3">{task.category}</p>
                 <p className="text-gray-400 text-sm">{task.description}</p>
               </div>
@@ -117,11 +174,23 @@ export default function Home() {
 
       <footer className="bg-gray-900 py-6 w-full mt-auto">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="text-gray-400 mb-2">&copy; {new Date().getFullYear()} EnkhUchral</p>
+          <p className="text-gray-400 mb-2">
+            &copy; {new Date().getFullYear()} EnkhUchral
+          </p>
           <div className="flex justify-center space-x-4">
-            <a href="https://github.com/uchka0610" className="text-gray-400 hover:text-white transition-colors">GitHub</a>
+            <a
+              href="https://github.com/uchka0610"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              GitHub
+            </a>
             <span className="text-gray-600">•</span>
-            <a href="mailto:nest21261022@nhs.edu.mn" className="text-gray-400 hover:text-white transition-colors">Email</a>
+            <a
+              href="mailto:nest21261022@nhs.edu.mn"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              Email
+            </a>
           </div>
         </div>
       </footer>

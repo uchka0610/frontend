@@ -89,14 +89,14 @@ export default function Home() {
                 alt="Statue"
                 width={1200}
                 height={1200}
-                className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[23%]"
+                className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[36%]"
               />
               {/* Fade */}
               <div
                 className="absolute inset-0 pointer-events-none"
                 style={{
                   background:
-                    "linear-gradient(to bottom, transparent 60%, #091C68 83%)",
+                    "linear-gradient(to bottom, transparent 60%, #091C68 90   %)",
                 }}
               />
             </div>
@@ -211,7 +211,7 @@ export default function Home() {
               {[1, 2, 3, 4].map((i) => (
                 <div key={i} className="overflow-hidden rounded-lg">
                   <img
-                    src={`/gallery-${i}.jpg`}
+                    src={`/big-${i}.png`}
                     alt={`Gallery ${i}`}
                     width={400}
                     height={300}
